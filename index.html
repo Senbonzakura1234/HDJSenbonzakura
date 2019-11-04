@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<!--    <h1 class="Achievements">Welcome, text color-->
+<!--        <span class="number"></span>-->
+<!--    </h1>-->
+<!--    <button class="btn-load">Load</button>-->
+<h2>Using the XMLHttpRequest Object</h2>
+
+<div id="demo">
+    <button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
+
+<script>
+    function loadXMLDoc() {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState === 4 && this.status === 200) {
+                document.getElementById("demo").innerHTML =
+                    this.responseText;
+            }
+        };
+        xhttp.open("GET", "xmlhttp_info.txt", true);
+        xhttp.send();
+    }
+</script>
+</body>
+</html>
