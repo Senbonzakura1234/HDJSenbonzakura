@@ -3,8 +3,10 @@
     <words>
       <w>firstname</w>
       <w>lastname</w>
+      <w>unstyled</w>
       <w>xhttp</w>
       <w>xmlhttp</w>
+      <w>youtubefav</w>
     </words>
   </dictionary>
 </component>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube</title>
+    <link rel="icon" href="images/YT.png" type="image/png" sizes="1024x721">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="js/youtube.js"></script>
+</head>
+<body style="background: #000">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="https://www.youtube.com" class="mx-auto">
+                <img src="images/Youtube.jpg"style="max-height: 200px" alt=""/>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row my-2">
+            <form name="input-content" class="row w-100">
+                <div class="form-row mx-auto">
+                    <div class="form-group">
+                        <input aria-label=""  id="keyword" name="keyword" class="form-control px-3"
+                                placeholder="Enter name to search..."
+                                style="border-radius: 35px 0 0 35px; min-width: 300px;
+                                max-width: 80vw; width: 800px; border: 1.5px solid #343a40;
+                                border-right: none !important;">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" value="Search" class="btn btn-dark px-5"
+                            style="border-radius: 0 35px 35px 0">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="content row my-2">
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl bg-transparent border-0" role="document">
+            <div class="modal-content bg-transparent border-0">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="" class="iframe" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                            picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
